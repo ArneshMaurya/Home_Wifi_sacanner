@@ -1,0 +1,125 @@
+================================================================================
+NETWORK SCAN REPORT
+================================================================================
+Scan Date: 2026-02-06 13:17:00
+Local IP: 192.168.1.37
+Network Range: 192.168.1.0/24
+Operating System: Windows
+
+Total Devices Found: 10
+Devices with Web Services: 6
+
+================================================================================
+
+Device #1
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.1
+MAC Address: 98:9D:B2:1F:46:8C
+Vendor:      Unknown
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.1:80
+    Status Code: 200
+    Server: Boa/0.93.15
+    Page Title: No Title
+
+
+Device #2
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.35
+MAC Address: 26:2F:D0:02:4B:B6
+Vendor:      Unknown
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.35:80
+    Status Code: 200
+    Server: Unknown
+    Page Title: No Title
+
+
+Device #3
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.36
+MAC Address: 76:29:C6:17:6A:7F
+Vendor:      Unknown
+Web Services: 0
+
+Device #4
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.38
+MAC Address: 84:F3:EB:58:47:E3
+Vendor:      Unknown
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.38:80
+    Status Code: 200
+    Server: Unknown
+    Page Title: ESP8266  Arduino
+
+
+Device #5
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.39
+MAC Address: 4A:1E:0C:C3:D5:6D
+Vendor:      Unknown
+Web Services: 0
+
+Device #6
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.43
+MAC Address: 94:F8:27:DE:31:E5
+Vendor:      Unknown
+Web Services: 0
+
+Device #7
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.45
+MAC Address: F0:A7:31:F9:95:F3
+Vendor:      Unknown
+Web Services: 1
+
+Web Services:
+  - URL: https://192.168.1.45:443
+    Status Code: 404
+    Server: Unknown
+    Page Title: No Title
+
+
+Device #8
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.46
+MAC Address: 50:91:E3:BE:CD:CB
+Vendor:      Unknown
+Web Services: 1
+
+Web Services:
+  - URL: https://192.168.1.46:443
+    Status Code: 404
+    Server: Unknown
+    Page Title: No Title
+
+
+Device #9
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.51
+MAC Address: 98:25:4A:B2:5E:DF
+Vendor:      TP-Link
+Web Services: 1
+
+Web Services:
+  - URL: https://192.168.1.51:443
+    Status Code: 404
+    Server: Unknown
+    Page Title: No Title
+
+
+Device #10
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.100
+MAC Address: 26:2F:D0:02:4B:B6
+Vendor:      Unknown
+Web Services: 0
+

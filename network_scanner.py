@@ -1012,7 +1012,13 @@ class NetworkScanner:
                 if response.text:
                     title_match = re.search(r'<title>(.*?)</title>', response.text, re.IGNORECASE | re.DOTALL)
                     if title_match:
-                        title = title_match.group(1).strip()[:100]  # Limit to 100 chars
+                        title = title_match.group(1).strip()
+                        # Clean up whitespace and limit length
+                        title = ' '.join(title.split())[:100]
+                        # Replace problematic characters
+                        title = title.encode('ascii', 'ignore').decode('ascii')
+                        if not title:
+                            title = "No Title"
                 
                 # Get server header
                 server = response.headers.get('Server', 'Unknown')
@@ -1082,6 +1088,12 @@ class NetworkScanner:
         # Step 4: Create device list with vendor info
         print("\n[*] Step 4: Identifying vendors...")
         for ip, mac in ip_mac_map.items():
+            # Skip broadcast and multicast addresses
+            if mac == 'FF:FF:FF:FF:FF:FF' or mac.startswith('01:00:5E'):
+                continue
+            if ip.endswith('.255') or ip.startswith('224.') or ip.startswith('239.') or ip == '255.255.255.255':
+                continue
+                
             vendor = self._identify_vendor(mac)
             self.devices.append({
                 'ip': ip,
@@ -1159,7 +1171,7 @@ class NetworkScanner:
         import os
         filepath = os.path.join(os.getcwd(), filename)
         
-        with open(filepath, 'w') as f:
+        with open(filepath, 'w', encoding='utf-8') as f:
             f.write("="*80 + "\n")
             f.write("NETWORK SCAN REPORT\n")
             f.write("="*80 + "\n")
