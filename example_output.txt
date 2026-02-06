@@ -1,0 +1,152 @@
+================================================================================
+NETWORK SCAN REPORT
+================================================================================
+Scan Date: 2026-02-06 14:30:45
+Local IP: 192.168.1.100
+Network Range: 192.168.1.0/24
+Operating System: Windows
+
+Total Devices Found: 12
+Devices with Web Services: 5
+
+================================================================================
+
+Device #1
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.1
+MAC Address: E8:48:B8:C8:D7:1A
+Vendor:      TP-Link
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.1:80
+    Status Code: 200
+    Server: GoAhead-Webs
+    Page Title: TP-LINK Wireless Router TL-WR940N
+
+
+Device #2
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.10
+MAC Address: DC:A6:32:12:34:56
+Vendor:      Raspberry Pi
+Web Services: 3
+
+Web Services:
+  - URL: http://192.168.1.10:80
+    Status Code: 200
+    Server: nginx/1.18.0
+    Page Title: Home Assistant
+
+  - URL: http://192.168.1.10:8123
+    Status Code: 200
+    Server: Python/3.9 aiohttp/3.8.1
+    Page Title: Home Assistant - My Home
+
+  - URL: http://192.168.1.10:9090
+    Status Code: 200
+    Server: Cockpit/234
+    Page Title: System - Cockpit
+
+
+Device #3
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.15
+MAC Address: 00:11:32:AB:CD:EF
+Vendor:      Synology
+Web Services: 2
+
+Web Services:
+  - URL: https://192.168.1.15:5000
+    Status Code: 200
+    Server: nginx
+    Page Title: Synology DiskStation
+
+  - URL: https://192.168.1.15:5001
+    Status Code: 200
+    Server: nginx
+    Page Title: DSM - Synology DiskStation Manager
+
+
+Device #4
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.25
+MAC Address: 3C:5A:B4:78:90:12
+Vendor:      Google
+Web Services: 0
+
+
+Device #5
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.50
+MAC Address: B8:27:EB:A1:B2:C3
+Vendor:      Raspberry Pi
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.50:80
+    Status Code: 200
+    Server: Apache/2.4.41 (Ubuntu)
+    Page Title: Pi-hole Admin Console
+
+
+Device #6
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.75
+MAC Address: 28:6A:BA:45:67:89
+Vendor:      Apple
+Web Services: 0
+
+
+Device #7
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.100
+MAC Address: A4:83:E7:23:45:67
+Vendor:      Apple
+Web Services: 0
+
+
+Device #8
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.120
+MAC Address: 5C:F9:38:D1:E2:F3
+Vendor:      Apple
+Web Services: 0
+
+
+Device #9
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.150
+MAC Address: E8:50:8B:11:22:33
+Vendor:      Samsung
+Web Services: 1
+
+Web Services:
+  - URL: http://192.168.1.150:8080
+    Status Code: 200
+    Server: Node.js Express
+    Page Title: Development Server - Project Dashboard
+
+
+Device #10
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.175
+MAC Address: 48:D7:05:AA:BB:CC
+Vendor:      Apple
+Web Services: 0
+
+
+Device #11
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.200
+MAC Address: 74:DA:88:44:55:66
+Vendor:      TP-Link
+Web Services: 0
+
+
+Device #12
+--------------------------------------------------------------------------------
+IP Address:  192.168.1.250
+MAC Address: 00:0C:29:77:88:99
+Vendor:      VMware
+Web Services: 0
