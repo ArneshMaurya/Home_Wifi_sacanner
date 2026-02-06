@@ -1155,7 +1155,9 @@ class NetworkScanner:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filename = f"network_scan_{timestamp}.txt"
         
-        filepath = f"/mnt/user-data/outputs/{filename}"
+        # Save to current directory (cross-platform)
+        import os
+        filepath = os.path.join(os.getcwd(), filename)
         
         with open(filepath, 'w') as f:
             f.write("="*80 + "\n")
